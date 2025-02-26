@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSharp Lang</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+        }
+        h1, h3 {
+            color: #bb86fc;
+        }
+        code {
+            margin: 10px 0;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            white-space: pre-wrap;
+        }
+        a {
+            color: #bb86fc;
+        }
+    </style>
+</head>
+<body>
+    <h1>DSharp Lang</h1>
+    <h3>Still in early beta</h3>  
+    <p>
+        Code example:
+        <code>
+import std::file;
+import std::conv;
+
+void greet {
+    println("Hello, World!");
+};
+
+greet;
+
+Name = "Dsharp";
+void personalizedGreet {
+    printlnf("Hello, {}", Name);
+};
+personalizedGreet;
+
+std::file.write("test.txt", "This is a test file content");
+println(std::file.read("test.txt"));
+intValue = std::conv.to(int, "123");
+println(intValue);
+struct Person {
+    field name;
+    field age;
+};
+
+person = new struct Person();
+person.name = "Alice";
+person.age = 30;
+printlnf("Name: {}, Age: {}", person.name, person.age);
+        </code>
+    </p>
+</body>
+</html>
